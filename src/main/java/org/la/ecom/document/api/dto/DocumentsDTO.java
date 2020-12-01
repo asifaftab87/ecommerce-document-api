@@ -9,12 +9,12 @@ public class DocumentsDTO implements Serializable{
 	private String id;
 	private String name;
 	private String type;
-	private String size;
+	private long size;
 	private byte[] contents;
 	
 	public DocumentsDTO() {}
 
-	public DocumentsDTO(String id, String name, String type, String size, byte[] contents) {
+	public DocumentsDTO(String id, String name, String type, long size, byte[] contents) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -47,11 +47,11 @@ public class DocumentsDTO implements Serializable{
 		this.type = type;
 	}
 
-	public String getSize() {
+	public long getSize() {
 		return size;
 	}
 
-	public void setSize(String size) {
+	public void setSize(long size) {
 		this.size = size;
 	}
 
